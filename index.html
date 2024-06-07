@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocker Paper Scissor game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Rocker Paper Scissor <br />Game</h1>
+    <div id="score">
+      <h2>Score</h2>
+      <span class="your-point">
+        You
+        <input type="text" readonly value="0" name="your-point" />
+      </span>
+      <span class="computer-point">
+        Computer
+        <input type="text" readonly value="0" name="computer-point" />
+      </span>
+    </div>
+    <div id="game">
+      <button onclick="playGame('rock')">🤜</button>
+      <button onclick="playGame('paper')">🖐️</button>
+      <button onclick="playGame('scissor')">✌️</button>
+    </div>
+    <span class="you">
+      <b>Your choice:</b>
+    </span>
+    <span class="computer">
+      <b>Computer choice:</b>
+    </span>
+    <span class="win">You Win 😊</span>
+    <span class="lose">You Lose 😒</span>
+    <span class="pair">You pair 😑</span>
+    <script src="app.js"></script>
+  </body>
+</html>
